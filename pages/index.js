@@ -1,7 +1,12 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import ActivityList from '../components/activities/activity-list';
+import { getFeaturedActivities } from '../dummy-activities-data';
 
 export default function Home() {
+  const featuredActivities = getFeaturedActivities();
+  console.log(featuredActivities);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,6 +21,8 @@ export default function Home() {
         </h1>
         <p>This is the Dashboard Page.</p>
       </div>
+      <h2>Featured Activities</h2>
+      <ActivityList activities={featuredActivities} />
     </div>
   );
 }
