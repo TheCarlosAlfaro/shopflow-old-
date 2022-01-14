@@ -14,6 +14,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="#">ShopFlow</a>
         </h1>
+        <p>This is the Dashboard Page.</p>
       </div>
     </div>
   );
