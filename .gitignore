@@ -32,3 +32,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
