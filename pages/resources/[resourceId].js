@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-export default function ProductId() {
+export default function ResourcePage() {
   const router = useRouter();
 
   console.log(router.pathname);

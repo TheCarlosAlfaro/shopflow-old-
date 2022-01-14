@@ -17,6 +17,12 @@ export default function Navbar() {
         <li>
           <Link href="/resources">Resources</Link>
         </li>
+        <li>
+          <Link href="/activities">Activities</Link>
+        </li>
+        <li>
+          <Link href="/reports">Reports</Link>
+        </li>
       </ul>
     </div>
   );
