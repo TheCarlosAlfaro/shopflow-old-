@@ -35,7 +35,7 @@ export function getFeaturedActivities() {
   return DUMMY_EVENTS.filter((event) => event.isFeatured);
 }
 
-export function getAllEvents() {
+export function getAllActivities() {
   return DUMMY_EVENTS;
 }
 
