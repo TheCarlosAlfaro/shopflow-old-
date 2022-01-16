@@ -5,6 +5,7 @@ import { getActivityById } from '../../dummy-activities-data';
 import ActivitySummary from '../../components/activity-detail/activity-summary';
 import ActivityLogistics from '../../components/activity-detail/activity-logistics';
 import ActivityContent from '../../components/activity-detail/activity-content';
+import ErrorAlert from '../../components/ui/error-alert';
 
 export default function ActivityDetailPage() {
   const router = useRouter();
@@ -12,7 +13,13 @@ export default function ActivityDetailPage() {
   const activity = getActivityById(activityId);
 
   if (!activity) {
-    return <p>No activity found</p>;
+    return (
+      <>
+        <ErrorAlert>
+          <p>No activity found</p>
+        </ErrorAlert>
+      </>
+    );
   }
 
   return (
