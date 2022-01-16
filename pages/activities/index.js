@@ -1,6 +1,7 @@
 import React from 'react';
 import { getAllActivities } from '../../dummy-activities-data';
-import SingleActivity from '../../components/activities/single-activity';
+import ActivityList from '../../components/activities/activity-list';
+import ActivitiesSearch from '../../components/activities/activities-search';
 
 export default function Activities() {
   const allActivities = getAllActivities();
@@ -8,9 +9,8 @@ export default function Activities() {
     <div>
       <h1>Activities Page.</h1>
       <p>Shows all activities</p>
-      {allActivities.map((activity) => {
-        return <SingleActivity key={activity.id} details={activity} />;
-      })}
+      <ActivitiesSearch />
+      <ActivityList activities={allActivities} />
     </div>
   );
 }
